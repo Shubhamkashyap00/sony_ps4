@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SONY PS4</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a
+                href="https://www.playstation.com/en-in/accessories/dualsense-wireless-controller/?smcid=pdc%3Aen-in%3Aaccessories-dualshock-4-wireless-controller%3Aprimary%20nav%3Amsg-accessories%3Aps5-controllers"
+                >Game Controllers</a
+              >
+            </li>
+            <li>
+              <a href="https://www.playstation.com/en-in/ps-vr2/"
+                >VR Accessories</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.playstation.com/en-in/accessories/media-remote/"
+                >Media Remotes</a
+              >
+            </li>
+            <li>
+              <a href="https://store.playstation.com/en-in/pages/latest"
+                >Others</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <img src="menu.png" class="menu-icon" onclick="togglemenu()" />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>PS4 V2<br />Dualshock 4</h2>
+          <h3>Wireless Controller for PlayStation 5</h3>
+          <p>(Compatible/Generic)</p>
+          <h4>$32.50</h4>
+          <a href="https://shopatsc.com/collections/playstation">
+            <button type="button">Buy Now<img src="arrow.png" /></button>
+          </a>
+        </div>
+        <div class="col-2">
+          <img src="controller.png" class="controller" />
+          <div class="color-box"></div>
+          <div class="add-btn">
+            <img src="add.png" />
+            <a
+              href="https://www.playstation.com/en-in/accessories/dualsense-wireless-controller/?smcid=other%3Aen-in%3Ablank%3Aprimary%20nav%3Amsg-accessories%3Aps5-controllers"
+            >
+              <p><small>Add to Cart</small></p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <img src="fb.png" alt="" />
+        <img src="tw.png" alt="" />
+        <img src="ig.png" alt="" />
+      </div>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
